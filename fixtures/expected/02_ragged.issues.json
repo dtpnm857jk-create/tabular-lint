@@ -1,0 +1,9 @@
+{
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "bom": false,
+  "required": [
+    "ragged_row"
+  ],
+  "exit": 1
+}

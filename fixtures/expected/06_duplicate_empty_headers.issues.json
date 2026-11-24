@@ -1,0 +1,10 @@
+{
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "bom": false,
+  "required": [
+    "empty_header",
+    "duplicate_header"
+  ],
+  "exit": 1
+}

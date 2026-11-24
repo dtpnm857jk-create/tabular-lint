@@ -1,0 +1,10 @@
+{
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "bom": false,
+  "required": [
+    "mixed_delimiters"
+  ],
+  "exit": 1,
+  "notes": "When parsed with the primary comma delimiter, the tab-only rows also look ragged; that second code is expected."
+}

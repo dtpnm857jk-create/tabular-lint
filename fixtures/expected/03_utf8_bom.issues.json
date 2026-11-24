@@ -1,0 +1,14 @@
+{
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "bom": true,
+  "required": [
+    "bom"
+  ],
+  "forbidden": [
+    "ragged_row",
+    "duplicate_header",
+    "empty_header"
+  ],
+  "exit": 0
+}

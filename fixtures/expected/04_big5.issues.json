@@ -1,0 +1,9 @@
+{
+  "encoding": "big5",
+  "delimiter": ",",
+  "bom": false,
+  "required": [
+    "encoding_non_utf8"
+  ],
+  "exit": 0
+}

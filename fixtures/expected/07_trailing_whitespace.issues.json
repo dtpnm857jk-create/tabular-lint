@@ -1,0 +1,9 @@
+{
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "bom": false,
+  "required": [
+    "trailing_whitespace"
+  ],
+  "exit": 0
+}
