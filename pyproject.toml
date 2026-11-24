@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabularlint"
+version = "0.1.0"
+description = "Read-only CSV/TSV linter for Git repos and CI. By Lanternbay Studio."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Lanternbay Studio" }]
+keywords = ["csv", "tsv", "lint", "ci", "pre-commit"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/dtpnm857jk-create/tabular-lint"
+Issues = "https://github.com/dtpnm857jk-create/tabular-lint/issues"
+
+[project.scripts]
+tabular-lint = "tabularlint.cli:main"
+tabularlint = "tabularlint.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tabularlint*"]

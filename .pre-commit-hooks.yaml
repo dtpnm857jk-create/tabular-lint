@@ -1,0 +1,12 @@
+# Official hook definition for this repository (repo root).
+# Consuming repos should depend on this repo at tag v0.1.0, hook id tabular-lint.
+# See README.md for a copy-paste .pre-commit-config.yaml.
+- id: tabular-lint
+  name: tabular-lint
+  description: Lint CSV/TSV files for ragged rows, encoding/BOM, mixed delimiters or line endings, duplicate/empty headers, and trailing whitespace.
+  entry: tabular-lint
+  language: python
+  language_version: python3
+  types: [text]
+  files: '\.(csv|tsv)$'
+  pass_filenames: true
