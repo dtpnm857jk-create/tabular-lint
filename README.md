@@ -156,3 +156,9 @@ repos:
 ```bash
 python3 run_fixtures.py
 ```
+
+## Need a messy CSV fixed?
+
+If you'd rather not fix it yourself: we fix one messy CSV/TSV file for NT$300 (Taiwan), returned within 3 hours with a short change report, and you pay only after you accept the result. Details: [CSV Clinic fix service](https://csvclinic.itch.io/csv-clinic?utm_source=github&utm_medium=readme&utm_campaign=fixservice)
+
+
