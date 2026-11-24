@@ -1,0 +1,15 @@
+{
+  "include": ["*.csv", "*.tsv"],
+  "exclude": ["**/fixtures/expected/**"],
+  "fail_on": "error",
+  "checks": {
+    "ragged_row": "error",
+    "encoding_non_utf8": "warning",
+    "bom": "warning",
+    "mixed_line_endings": "warning",
+    "mixed_delimiters": "error",
+    "duplicate_header": "error",
+    "empty_header": "error",
+    "trailing_whitespace": "warning"
+  }
+}

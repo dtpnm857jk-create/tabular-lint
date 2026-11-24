@@ -1,0 +1,10 @@
+# Example .pre-commit-config.yaml for a consuming repository.
+#
+#   pre-commit install
+#   pre-commit run tabular-lint --all-files
+#
+repos:
+  - repo: https://github.com/dtpnm857jk-create/tabular-lint
+    rev: v0.1.0
+    hooks:
+      - id: tabular-lint
