@@ -1,0 +1,36 @@
+# Example GitHub Actions workflow. Copy to .github/workflows/tabular-lint.yml
+# in a repository that also contains this project (or install it first).
+# This file is an example only — nothing has been published or pushed.
+name: tabular-lint
+
+on:
+  push:
+    paths:
+      - "**/*.csv"
+      - "**/*.tsv"
+      - ".tabularlint.json"
+      - ".github/workflows/tabular-lint.yml"
+  pull_request:
+    paths:
+      - "**/*.csv"
+      - "**/*.tsv"
+      - ".tabularlint.json"
+      - ".github/workflows/tabular-lint.yml"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tabular-lint
+        # When this repo is the workflow source, the package is already in the tree.
+        # PYTHONPATH=. lets `python3 -m tabularlint` work without installation.
+        run: python3 -m tabularlint --format both .
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        # Nonzero exit on error-level issues fails the job.
